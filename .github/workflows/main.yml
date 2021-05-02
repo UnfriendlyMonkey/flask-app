@@ -59,6 +59,6 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           passphrase: ${{ secrets.PASSPHRASE }}
           script: |
-            sudo docker pull ummy/sprint19
+            sudo docker pull ummy/sprint19:latest
             sudo docker stop $(sudo docker ps -a -q)
-            sudo docker run --rm -d -p 5000:5000 ummy/sprint19
+            sudo docker run --rm -d -p 5000:5000 ummy/sprint19:latest
