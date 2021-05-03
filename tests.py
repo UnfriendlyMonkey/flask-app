@@ -9,7 +9,7 @@ class FlaskAppTests(unittest.TestCase):
 
     def test_get(self):
         r = self.app.get('/')
-        self.assertEqual(r.data.decode('utf-8'), 'Я заебался!')
+        self.assertEqual(r.data.decode('utf-8'), 'Я заебался совсем!')
 
     def test_post(self):
         r = self.app.post('/')
